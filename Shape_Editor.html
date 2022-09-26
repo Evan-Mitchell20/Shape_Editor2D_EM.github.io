@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+        <title>Shape Editor</title>
+        <header>
+            <h1>Shape Editor 2D</h1>
+            <p>Author: Evan Mitchell</p>
+            <p>Please note this is a work in progress and not at all finished</p>
+            <p>This code uses the open source library two.js. Documentation is available at two.js.org.</p>
+            <p>The html2canvas.js open source script is used for downloading images. Documentation at html2canvas.hertzen.com</p>
+        </header>
+        <script src="./HTML2canvas.js"></script>
+        <script src="./two.js"></script>
+    </head>
+    <body id ="body">
+        <button type='button' id = "line_button">Line</button>
+        <button type='button' id = "triangle_button">Triangle</button>
+        <button type='button' id = "square_button">Square</button>
+        <button type='button' id = "circle_button">Circle</button><br>
+        <label for = "number of sides">Number of Sides:</label>
+        <input type = "text" id = "polygon_sides">
+        <button type='button' id = "polygon_button">Polygon</button><br>
+        <button type = 'button' id = "clear_button">Clear</button>
+        <button type = 'button' id = "jpeg_button">Download as jpeg</button>
+        <button type = 'button' id = "upload_button">Upload JSON</button>
+        <button type = 'button' id = "download_button">Download JSON</button>
+        <div id = "container"></div>
+        
+        <label for = "rotation degrees">Rotation Degrees</label>
+        <input type = "text" id = "Rotation Degrees">
+        <button type='button' id = "Rotation_button">Rotate</button><br>
+
+        <label for = "scale factor">Scale Factor</label>
+        <input type = "text" id = "Scale Factor">
+        <button type='button' id = "Scale Button">Scale</button><br>
+
+        <script type="text/javascript" src="Shape_Editor.js"></script>
+    </body>
+</html>
